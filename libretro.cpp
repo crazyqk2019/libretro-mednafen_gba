@@ -1,4 +1,4 @@
-#include <stdarg.h>
+﻿#include <stdarg.h>
 #include <string.h>
 #include <errno.h>
 
@@ -568,8 +568,8 @@ void retro_set_environment(retro_environment_t cb)
    environ_cb = cb;
 
    static const struct retro_variable vars[] = {
-      { "gba_hle", "HLE bios emulation (Restart); enabled|disabled" },
-      { "gba_use_mednafen_save_method", "Save method (Restart); mednafen|libretro" },
+      { "gba_hle", "HLE BIOS 模拟 (需要重启); enabled|disabled" },
+      { "gba_use_mednafen_save_method", "存档方法（需要重启）; mednafen|libretro" },
       { NULL, NULL },
    };
    cb(RETRO_ENVIRONMENT_SET_VARIABLES, (void*)vars);
